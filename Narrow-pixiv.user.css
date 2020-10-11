@@ -1,0 +1,161 @@
+@-moz-document domain("pixiv.net") {
+/**
+ * Narrow - pixiv
+ * Author: Dwscdv3
+ * Version: 1.0.3
+ * min-width: 744px
+ */
+}
+
+@-moz-document domain("pixiv.net") {
+/* === Homepage and Universal === */
+/* min-width: 744px */
+
+.footer,
+.multi-ads-area,
+.ad-footer,
+.ad-printservice,
+.adsbygoogle,
+.premium-impression,
+/* Ads iframe */ .khklTY,
+/* Banner Ads */ .gjeHRm,
+/* Intrusive Ads */ .bqtGkf,
+/* Navbar Premium Promotion */ .jqJjEB {
+    display: none !important;
+}
+
+#js-mount-point-header.with-ad {
+	min-height: unset;
+}
+
+body,
+/* Navbar */ .fKkgNY,
+/* Navbar on Legacy */ .kBRZkr {
+	min-width: unset;
+}
+
+/* Tab Bar (Illust / Manga / Novel) */ .kqlTOQ,
+/* Section */ .khkYDJ,
+/* Thumbnail Grid Container */ .ljrFCw {
+	width: unset !important;
+	max-width: 1224px;
+}
+
+/* Thumbnail Grid Inner Container */ .dCCrDP {
+	justify-content: space-evenly;
+}
+}
+
+@-moz-document domain("pixiv.net") {
+/* === Illust Page === */
+/* min-width: 728px */
+
+/* Root Container */ .zgsQC {
+	padding: 0;
+}
+
+/* Main */ .ertGlR {
+	flex: 1 0 auto !important;
+}
+
+/* Sidebar */ .eOtiJy {
+	display: none;
+	margin-left: 0;
+}
+
+/* Recommendeds Grid */ .eiASZj {
+	grid-template-columns: repeat(auto-fit, 184px) !important;
+}
+
+/* Thumbnail Preview */ .kWQvBM {
+	max-width: 680px; /* 5 cols. Maybe responsive is better. */
+}
+
+/* Ads */ .eFqYrE,
+/* Ads */ .bEDiSv {
+	display: none;
+}
+}
+
+@-moz-document domain("pixiv.net") {
+/* === User Page === */
+
+@media (max-width: 1224px) {
+	/* Grid */ ._2WwRD0o {
+		margin: 0 auto;
+		justify-content: space-evenly;
+	}
+	
+	/* Nickname */ .jAnhbn,
+	/* Contact & Bio */ .kNSAqq > * {
+		width: unset !important;
+	}
+}
+}
+
+@-moz-document domain("pixiv.net") {
+/* === Search Page === */
+
+/* Premium Promotion Text */ .iCqVcO,
+/* Premium Promotion Button */ .dVxCdV,
+/* Premium Promotion Link Overlay */ .hYvGvO,
+/* Hot Artworks Fade Mask */ .fvHsDQ::after {
+	display: none;
+}
+
+@media (max-width: 1224px) {
+	/* Tag Info */ .fZNjEt,
+	/* Tab Bar */ .cRucPL {
+		width: unset !important;
+		max-width: 1224px;
+	}
+	
+	/* Grid */ .iTgRcY {
+		grid-template-columns: repeat(auto-fit, 184px) !important;
+		justify-content: space-evenly;
+	}
+}
+}
+
+@-moz-document url-prefix("https://www.pixiv.net/bookmark_new_illust.php"), url-prefix("https://www.pixiv.net/novel/bookmark_new.php"), url-prefix("https://www.pixiv.net/bookmark_add.php"), url-prefix("https://www.pixiv.net/bookmark.php") {
+/* === Timeline and Bookmark Page === */
+
+#wrapper,
+.layout-body,
+.bookmark-detail-unit .input-box {
+	width: unset;
+}
+
+.bookmark-detail-unit .input-box input {
+	width: calc(100% - 115px);
+}
+
+/* Illust Grid */ .x7wiBV0,
+.novel-items,
+._image-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+/* Ads */ ._unit > div[style="display: flex; justify-content: center; margin: 8px 0 12px;"] {
+	display: none !important;
+}
+}
+
+@-moz-document url-prefix("https://www.pixiv.net/bookmark.php") {
+/* === Bookmark Page === */
+
+.layout-a {
+	width: unset;
+}
+
+.layout-a .layout-column-2 {
+	width: calc(100% - 176px);
+}
+
+._user-profile-card,
+._user-profile-card-badges {
+	display: none;
+}
+}
