@@ -1,0 +1,116 @@
+/**
+ * Narrow - bilibili
+ * Author: Dwscdv3
+ * Version: 1.1.2
+ * min-width: 600px
+ */
+
+@-moz-document domain("bilibili.com") {
+.bilibili-player-video-state,
+.video-toolbar-module .app-download {
+    display: none !important;
+}
+
+@media (max-width: 1280px) {
+	.nav-link {
+		display: none !important;
+	}
+	.international-header .nav-search-box {
+		display: block !important;
+		margin-left: 0;
+	}
+	.international-header .nav-user-center .user-con.search-icon {
+		display: none !important;
+	}
+	.mini-upload {
+		display: none !important;
+	}
+}
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/video/"), url-prefix("https://www.bilibili.com/bangumi/") {
+#activity_vote,
+.v-wrap #bannerAd {
+	display: none;
+}
+
+@media (max-width: 1280px) {
+	.bilibili-player-video-btn-pagelist {
+		display: block !important;
+	}
+	
+	.l-con,
+	.plp-l {
+		width: 100% !important;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	
+	.v-wrap .video-info {
+		position: relative;
+		width: calc(100% - 225px);
+		height: unset;
+		padding: 16px 0;
+	}
+	
+	.video-info .video-title {
+		width: 100%;
+		height: unset;
+		white-space: unset;
+	}
+	
+	.v-wrap .r-con {
+		position: absolute;
+		top: 58px;
+		right: 20px;
+	}
+	
+	.v-wrap .r-con,
+	.up-info .up-info_right {
+		width: unset;
+	}
+	
+	.up-info .up-info_right .name {
+		height: unset !important;
+		line-height: unset !important;
+	}
+	
+	.up-info .up-info_right .follow-btn {
+		width: 150px;
+	}
+	
+	.plp-r,
+	.r-con>*:not(#v_upinfo),
+	.up-info .up-info_right .name .message,
+	.up-info .up-info_right .desc,
+	.up-info .btn-panel .charge-btn {
+		display: none;
+	}
+
+	.v-wrap,
+	#app {
+		width: unset !important;
+		min-width: unset;
+		padding: 0 !important;
+	}
+	
+	#bofqi,
+	#player_module,
+	#bilibili-player {
+		width: unset !important;
+		height: unset !important;
+	}
+	
+	.mini-upload {
+		display: block !important;
+		visibility: hidden !important;
+		width: 40px !important;
+	}
+	
+	.bilibili-helper {
+		position: absolute !important;
+		top: 13px !important;
+		right: 12px !important;
+	}
+}
+}
