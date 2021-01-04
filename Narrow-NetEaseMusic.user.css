@@ -1,0 +1,199 @@
+/**
+ * Narrow - NetEase Music
+ * Author: Dwscdv3
+ * Version: 1.0.1
+ * min-width: 711px
+ * recommended-min-height: 320px
+ *
+ * Lyrics panel is removed, playlist panel is expanded into a side bar.
+ */
+
+@-moz-document domain("music.163.com") {
+a[href="/store/product"],
+a[href="/nmusician/web/recruit"],
+.m-creator-center,
+.m-nav .lst,
+.m-multi,
+.g-ft,
+.brand-tag,
+.u-icn-84 {
+	display: none;
+}
+
+.zcnt {
+	overflow: auto;
+}
+
+.login-list,
+.n-login-scan {
+	height: calc(100vh - 39px);
+	min-height: unset !important;
+	max-height: 332px;
+}
+
+body {
+	min-width: unset;
+}
+
+.m-top .wrap {
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.m-playbar .wrap {
+	display: flex;
+	width: calc(100% - 20px);
+	max-width: 865px;
+	margin-left: 0 !important;
+	transform: translateX(-50%);
+}
+
+.m-playbar .play {
+	width: unset;
+	max-width: 493px;
+	padding-right: 20px;
+	flex: 1;
+}
+
+.m-pbar,
+.m-pbar .barbg {
+	width: unset;
+	max-width: 493px;
+}
+
+.m-pbar .time {
+	top: -20px;
+	right: 0px;
+}
+
+.m-playbar .list {
+	left: unset;
+	right: 0;
+	width: 438px;
+	/* max-width: calc(100% + 12px); */
+	height: calc(100vh - 47px);
+	/* max-height: calc(100vh - 47px); */
+	margin-left: 0;
+}
+
+.m-playbar .msk,
+.m-playbar .msk2,
+.m-playbar .listhdc .lytit,
+.m-playbar .listlyric,
+.m-playbar .listbd .bline-1,
+.m-playbar .ask,
+.m-playbar .imgbg {
+	display: none;
+}
+
+.m-playbar .listhd {
+	background-position-x: -2px;
+}
+
+.m-playbar .listhdc .clear {
+	left: 340px;
+}
+
+.m-playbar .listhdc .line {
+	left: 327px;
+}
+
+.m-playbar .listhdc .addall {
+	left: 268px;
+}
+
+.m-playbar .listbd {
+	width: 100%;
+	height: calc(100% - 41px);
+	box-sizing: border-box;
+	background: black;
+}
+
+.m-playbar .listbd .bline {
+	left: unset;
+	right: 0;
+	height: 100%;
+	z-index: 400;
+}
+
+.m-playbar .listbdc {
+	width: 430px;
+	height: 100%;
+}
+
+.m-playbar .col-6,
+.m-playbar .ico-dl,
+.m-playbar .ico-share,
+.m-playbar .ico-add {
+	display: none;
+}
+
+.m-playbar .col-3 {
+	width: 4px;
+}
+
+@media (max-height: 399px), (max-width: 779px) {
+	
+	:root {
+		--navbar-height: 48px;
+	}
+	
+	.m-top,
+	.m-nav li,
+	.m-nav li span,
+	.m-nav a,
+	.m-nav a em {
+		height: var(--navbar-height);
+	}
+	
+	.m-top .logo,
+	.m-nav a.z-slt .cor {
+		display: none;
+	}
+	
+	.m-nav a {
+		line-height: var(--navbar-height);
+	}
+	
+	.m-tophead,
+	.m-srch .srchbg {
+		margin-top: calc((var(--navbar-height) - 32px) / 2);
+	}
+	
+	#g_top {
+		height: calc(var(--navbar-height) - 16px);
+	}
+	
+	#g_nav,
+	.m-subnav-up {
+		height: 0;
+		border-bottom: none;
+	}
+	
+	#g_nav2 {
+		display: none;
+	}
+}
+
+@media (max-width: 979px) {
+	
+	.g-bd4 {
+		width: unset;
+		max-width: 980px;
+		background: white;
+	}
+	
+	.g-mn4,
+	.g-mn4c {
+		float: unset;
+		margin: 0 auto;
+		width: 710px;
+	}
+	
+	.g-sd4 {
+		display: none;
+	}
+}
+}
