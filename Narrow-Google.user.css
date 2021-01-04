@@ -1,0 +1,164 @@
+/**
+ * Narrow - Google
+ * Author: Dwscdv3
+ * Version: 1.0.1
+ * min-width: 540px
+ */
+
+@-moz-document url-prefix("https://www.google.com/search") {
+/* 页脚 */
+
+#footcnt {
+	display: none;
+}
+
+/* 页眉 */
+
+div#searchform,
+#top_nav,
+#appbar,
+#fbar {
+	min-width: unset;
+}
+
+@media (max-width: 1280px) {
+	
+	/* 右栏 */
+	
+	#rhs {
+		display: none;
+	}
+}
+
+@media (max-width: 620px) {
+	
+	.g h3 {
+		font-size: large !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	
+	body {
+		overflow-x: hidden;
+	}
+	
+	/* 搜索框 */
+	
+	.logo {
+		display: none;
+	}
+	
+	#tsf > div:nth-child(2) > div:first-child {
+		margin-left: 0;
+	}
+
+	#tsf,
+	#tsf > div:nth-child(2) > div:first-child,
+	#tsf > div:nth-child(2) > div:first-child > div:nth-child(2) {
+		width: unset;
+	}
+	
+	#tsf input {
+		width: 100%;
+	}
+	
+	/* 搜索结果 */
+	
+	.g {
+		width: unset !important;
+	}
+	
+	/* 某神秘 float 元素 */ .D6j0vc {
+		float: unset;
+		width: unset;
+	}
+
+	#rcnt .col {
+		width: unset !important;
+		float: unset;
+	}
+
+	#cnt {
+		min-width: unset;
+	}
+	
+	.mw, .big .mw {
+		min-width: unset;
+	}
+
+	#cnt #center_col,
+	.mw #rhs {
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	#cnt #center_col,
+	.mw #rhs {
+		max-width: 600px;
+		width: unset;
+	}
+	
+	/* 翻页 */
+	
+	#cnt #foot {
+		width: unset;
+	}
+	
+	/* 其他用户还问了…… */
+	
+	#center_col .kp-blk {
+		max-width: 600px;
+		width: unset;
+	}
+	
+	.kno-ftr {
+		display: none;
+	}
+
+	/* 搜索过滤选项 */
+	
+	#slim_appbar,
+	#hdtbMenus {
+		text-align: right;
+	}
+	
+	#hdtbMenus {
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+	
+	.hdtb-mn-o {
+		min-width: unset !important;
+	}
+	
+	.hdtbItm.hdtbSel,
+	.hdtbItm a {
+		padding-right: 12px !important;
+	}
+	
+	/* 搜索结果数量 */
+
+	#slim_appbar>* {
+		min-width: unset;
+		right: 0;
+	}
+	
+	/* 导航栏 */
+
+	.hdtb-mn-cont > div:first-child {
+		display: none !important;
+	}
+
+	#hdtb-msb {
+		min-width: unset;
+		float: unset;
+		padding: 0 8px;
+		box-sizing: border-box;
+	}
+
+	#hdtb-msb-vis {
+		margin-left: 0;
+	}
+}
+}
