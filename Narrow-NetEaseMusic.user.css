@@ -1,10 +1,17 @@
+/* ==UserStyle==
+@name           Narrow - NetEase Music
+@namespace      github.com/Dwscdv3/NarrowSheet
+@version        1.0.1
+@description    Narrow layout support for NetEase Music. (min-width: 711px)
+@author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
+@homepageURL    https://github.com/Dwscdv3/NarrowSheet
+@supportURL     https://github.com/Dwscdv3/NarrowSheet/issues
+@updateURL      https://github.com/Dwscdv3/NarrowSheet/Narrow-NetEaseMusic.user.css
+@license        GPL-3.0-or-later
+@preprocessor   default
+==/UserStyle== */
+
 /**
- * Narrow - NetEase Music
- * Author: Dwscdv3
- * Version: 1.0.1
- * min-width: 711px
- * recommended-min-height: 320px
- *
  * Lyrics panel is removed, playlist panel is expanded into a side bar.
  */
 
