@@ -1,9 +1,15 @@
-/**
- * Narrow - Google
- * Author: Dwscdv3
- * Version: 1.0.1
- * min-width: 540px
- */
+/* ==UserStyle==
+@name           Narrow - Google
+@namespace      github.com/Dwscdv3/NarrowSheet
+@version        1.0.1
+@description    Narrow layout support for Google. (min-width: 540px)
+@author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
+@homepageURL    https://github.com/Dwscdv3/NarrowSheet
+@supportURL     https://github.com/Dwscdv3/NarrowSheet/issues
+@updateURL      https://github.com/Dwscdv3/NarrowSheet/Narrow-Google.user.css
+@license        GPL-3.0-or-later
+@preprocessor   default
+==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/search") {
 /* 页脚 */
