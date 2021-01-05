@@ -1,9 +1,15 @@
-/**
- * Narrow - pixiv
- * Author: Dwscdv3
- * Version: 1.0.3
- * min-width: 744px
- */
+/* ==UserStyle==
+@name           Narrow - pixiv
+@namespace      github.com/Dwscdv3/NarrowSheet
+@version        1.0.3
+@description    Narrow layout support for pixiv. (min-width: 744px)
+@author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
+@homepageURL    https://github.com/Dwscdv3/NarrowSheet
+@supportURL     https://github.com/Dwscdv3/NarrowSheet/issues
+@updateURL      https://github.com/Dwscdv3/NarrowSheet/Narrow-pixiv.user.css
+@license        GPL-3.0-or-later
+@preprocessor   default
+==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
 /* === Homepage and Universal === */
