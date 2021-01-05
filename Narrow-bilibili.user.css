@@ -1,13 +1,20 @@
-/**
- * Narrow - bilibili
- * Author: Dwscdv3
- * Version: 1.1.3
- * min-width: 600px
- */
+/* ==UserStyle==
+@name           Narrow - bilibili
+@namespace      github.com/Dwscdv3/NarrowSheet
+@version        1.1.4
+@description    Narrow layout support for bilibili. (min-width: 600px)
+@author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
+@homepageURL    https://github.com/Dwscdv3/NarrowSheet
+@supportURL     https://github.com/Dwscdv3/NarrowSheet/issues
+@updateURL      https://github.com/Dwscdv3/NarrowSheet/Narrow-bilibili.user.css
+@license        GPL-3.0-or-later
+@preprocessor   default
+==/UserStyle== */
 
 @-moz-document domain("bilibili.com") {
 .bilibili-player-video-state,
-.video-toolbar-module .app-download {
+.video-toolbar-module .app-download,
+.mini-vip {
     display: none !important;
 }
 
@@ -82,8 +89,19 @@
 		width: 150px;
 	}
 	
+	.members-info__header {
+		display: none !important;
+	}
+	
+	#member-container {
+		width: unset;
+		padding-top: 13px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
 	.plp-r,
-	.r-con>*:not(#v_upinfo),
+	.r-con>*:not(#v_upinfo):not(.members-info),
 	.up-info .up-info_right .name .message,
 	.up-info .up-info_right .desc,
 	.up-info .btn-panel .charge-btn {
@@ -113,7 +131,7 @@
 	.bilibili-helper {
 		position: absolute !important;
 		top: 13px !important;
-		right: 12px !important;
+		right: 10px !important;
 	}
 }
 }
