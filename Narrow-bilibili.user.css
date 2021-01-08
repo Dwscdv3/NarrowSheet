@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Narrow - bilibili
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.2.0
+@version        1.2.1
 @description    Narrow layout support for bilibili.
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
@@ -224,9 +224,13 @@
 
 		#bofqi,
 		#player_module,
-		#bilibili-player {
+		#bilibili-player,
+		#bilibili-player .player,
+		.bilibili-player,
+		.bilibili-player .bilibili-player-area {
 			width: unset !important;
 			height: unset !important;
+			max-height: calc(100vh - 195px);
 		}
 
 		.mini-upload {
