@@ -230,7 +230,19 @@
 		.bilibili-player .bilibili-player-area {
 			width: unset !important;
 			height: unset !important;
+			min-height: 360px;
 			max-height: calc(100vh - 195px);
+		}
+		
+		@media (max-height: 554px) {
+			#bofqi,
+			#player_module,
+			#bilibili-player,
+			#bilibili-player .player,
+			.bilibili-player,
+			.bilibili-player .bilibili-player-area {
+				max-height: calc(100vh - 93px);
+			}
 		}
 
 		.mini-upload {
