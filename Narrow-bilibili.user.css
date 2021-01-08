@@ -222,6 +222,7 @@
 			padding: 0 !important;
 		}
 
+		.player-module,
 		#bilibili-player:not(.webfullscreen),
 		#bilibili-player:not(.webfullscreen) .player,
 		.bilibili-player:not(.mode-webfullscreen),
@@ -233,6 +234,7 @@
 		}
 		
 		@media (max-height: 554px) {
+			.player-module,
 			#bilibili-player:not(.webfullscreen),
 			#bilibili-player:not(.webfullscreen) .player,
 			.bilibili-player:not(.mode-webfullscreen),
