@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Narrow - bilibili
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.2.1
+@version        1.2.2
 @description    Narrow layout support for bilibili.
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
@@ -222,12 +222,10 @@
 			padding: 0 !important;
 		}
 
-		#bofqi,
-		#player_module,
-		#bilibili-player,
-		#bilibili-player .player,
-		.bilibili-player,
-		.bilibili-player .bilibili-player-area {
+		#bilibili-player:not(.webfullscreen),
+		#bilibili-player:not(.webfullscreen) .player,
+		.bilibili-player:not(.mode-webfullscreen),
+		.bilibili-player:not(.mode-webfullscreen) .bilibili-player-area {
 			width: unset !important;
 			height: unset !important;
 			min-height: 360px;
@@ -235,12 +233,10 @@
 		}
 		
 		@media (max-height: 554px) {
-			#bofqi,
-			#player_module,
-			#bilibili-player,
-			#bilibili-player .player,
-			.bilibili-player,
-			.bilibili-player .bilibili-player-area {
+			#bilibili-player:not(.webfullscreen),
+			#bilibili-player:not(.webfullscreen) .player,
+			.bilibili-player:not(.mode-webfullscreen),
+			.bilibili-player:not(.mode-webfullscreen) .bilibili-player-area {
 				max-height: calc(100vh - 93px);
 			}
 		}
