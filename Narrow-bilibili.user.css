@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Narrow - bilibili
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.2.2
+@version        1.2.3
 @description    Narrow layout support for bilibili.
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
@@ -233,6 +233,20 @@
 			max-height: calc(100vh - 195px);
 		}
 		
+		/* 修复选集菜单高度（需要 Chrome 79+）与滚动功能 */
+		.bilibili-player:not(.mode-webfullscreen) .bilibili-player-video-btn-pagelist .bilibili-player-video-btn-menu-wrap {
+			max-height: min(calc((100vw - 40px) * 9 / 16) - 48px, calc(100vh - 289px));
+			overflow: auto;
+		}
+		.bilibili-player.mode-webfullscreen .bilibili-player-video-btn-pagelist .bilibili-player-video-btn-menu-wrap {
+			max-height: calc(100vh - 73px);
+			overflow: auto;
+		}
+		/* B 站自带的滚动条会在列表大于 580px 时启用，这里检测并避免与其冲突 */
+		.bilibili-player .bilibili-player-video-btn-pagelist .bilibili-player-video-btn-menu-wrap[style*="touch"] {
+			overflow: hidden;
+		}
+		
 		@media (max-height: 554px) {
 			.player-module,
 			#bilibili-player:not(.webfullscreen),
@@ -240,6 +254,10 @@
 			.bilibili-player:not(.mode-webfullscreen),
 			.bilibili-player:not(.mode-webfullscreen) .bilibili-player-area {
 				max-height: calc(100vh - 93px);
+			}
+			
+			.bilibili-player:not(.mode-webfullscreen) .bilibili-player-video-btn-pagelist .bilibili-player-video-btn-menu-wrap {
+				max-height: min(calc((100vw - 40px) * 9 / 16) - 48px, calc(100vh - 187px));
 			}
 		}
 
