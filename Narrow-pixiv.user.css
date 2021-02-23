@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Narrow - pixiv
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.0.3
+@version        1.0.4
 @description    Narrow layout support for pixiv. (min-width: 744px)
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
 @supportURL     https://github.com/Dwscdv3/NarrowSheet/issues
-@updateURL      https://github.com/Dwscdv3/NarrowSheet/raw/main/Narrow-pixiv.user.css
+@updateURL      https://github.com/Dwscdv3/NarrowSheet/Narrow-pixiv.user.css
 @license        GPL-3.0-or-later
 @preprocessor   default
 ==/UserStyle== */
@@ -47,6 +47,7 @@ body,
 
 /* Thumbnail Grid Inner Container */ .dCCrDP {
 	justify-content: space-evenly;
+	margin: 0;
 }
 }
 
@@ -90,8 +91,8 @@ body,
 		justify-content: space-evenly;
 	}
 	
-	/* Nickname */ .jAnhbn,
-	/* Contact & Bio */ .kNSAqq > * {
+	/* Nickname */ .jMOHKU,
+	/* Contact & Bio */ .dTKKZV {
 		width: unset !important;
 	}
 }
