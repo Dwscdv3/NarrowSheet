@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Narrow - Google
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.0.2
+@version        1.0.3
 @description    Narrow layout support for Google. (min-width: 540px)
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
@@ -55,17 +55,17 @@ div#searchform,
 		display: none;
 	}
 	
-	#tsf > div:nth-child(2) > div:first-child {
+	#tsf > div:nth-child(1) > div:first-child {
 		margin-left: 0;
 	}
 
 	#tsf,
-	#tsf > div:nth-child(2) > div:first-child,
-	#tsf > div:nth-child(2) > div:first-child > div:nth-child(2) {
+	#tsf > div:nth-child(1) > div:first-child,
+	#tsf > div:nth-child(1) > div:first-child > div:nth-child(2) {
 		width: unset;
 	}
 	
-	#tsf > div:nth-child(2) > div:first-child {
+	#tsf > div:nth-child(1) > div:first-child {
 		width: calc(100% - 150px);
 		margin-left: 27px;
 		padding-left: 0;
@@ -176,8 +176,8 @@ div#searchform,
 		padding: 0 8px;
 		box-sizing: border-box;
 	}
-
-	#hdtb-msb-vis {
+	
+	#hdtb-msb > div:first-child > div:first-child {
 		margin-left: 0;
 	}
 }
