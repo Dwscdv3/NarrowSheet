@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Narrow - pixiv
 @namespace      github.com/Dwscdv3/NarrowSheet
-@version        1.0.4
+@version        1.0.5
 @description    Narrow layout support for pixiv. (min-width: 744px)
 @author         Dwscdv3 <dwscdv3@hotmail.com> (https://github.com/Dwscdv3)
 @homepageURL    https://github.com/Dwscdv3/NarrowSheet
@@ -72,8 +72,8 @@ body,
 	grid-template-columns: repeat(auto-fit, 184px) !important;
 }
 
-/* Thumbnail Preview */ .kWQvBM {
-	max-width: 680px; /* 5 cols. Maybe responsive is better. */
+/* Thumbnail Preview */ .gCXZqd {
+	max-width: calc(100vw - 160px);
 }
 
 /* Ads */ .eFqYrE,
